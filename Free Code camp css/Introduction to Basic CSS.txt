@@ -1,0 +1,22 @@
+Introduction to Basic CSS 
+Cascading style sheets (css) tell the browser how to display the contento write in HTML . 
+Css is case-sensitive. 
+
+¿What can you do with css?
+
+Modify some elements of html . 
+* Color.
+* Fonts. 
+* Positioning. 
+* Spacing. 
+* Sizing. 
+* Decorations. 
+* Transitions.
+
+
+We can apply css of many ways, the most used are : 
+ - With the style attribute. 
+ - By add in the html content with style tags.
+ - By a external style sheet that gonna be like an archive in the same folder of the web.
+
+ 
