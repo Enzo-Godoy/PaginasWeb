@@ -1,0 +1,59 @@
+override style in subsequent css.
+
+However, the order of the class declarations in the <style> section are what is important. 
+The second declaration will always take procedence over the first.
+
+We proved that browsers read CSS from top to bottom. 
+
+It doesn't matter wheter  we declare this css above or below pink-text class, since id attribute will always take precedence.
+
+Override Class Declaration with inline Styles. 
+Id declarations override class declarations, regardless of where they are declared in our style element css. 
+An inline style override boths id and class declarations.
+
+In many situations, we will use css libraries. These may acidentalyy override our own css. 
+So when we need  to be sure that an element has specific css, we can use  !important. 
+
+name {
+type:value !importante;
+}
+
+
+Use hex code for specific colors. 
+We usually use decimals, or base 10 numbers, wich use the symbols 0 to 9 for each digit.
+
+
+Hexadecimals (or hed) are base 16 numbers ---> This means it uses sixteen distinct symbols like decimals, the symbols 0-9 represent the values zero to nine. Then A,B,C,D,E,F represent the values ten to fifteen.
+Altogether, = to F can represent a digit in hexadecimal, giving us 16 total possible values. 
+// In css, we can use 6 hexadecimal digits to represent colors, two each for the red (R), green (G), and blue (B) components, 
+
+
+Fortunately, we can shorten it. For example, red's hex code #FF0000 can be shortened to #F000
+
+
+Another way to reprent colors in  CSS is by using RGB values 
+
+rgb (0, 0, 0) to (255, 255, 255)
+
+
+To create a css variable, we just need to give it a name with two dashes in front of it and assign it a value. 
+
+{
+--variable-name : value;
+}
+
+
+After create the variable, we can assign its value to other css properties by referencig the name we gave it. 
+
+property : var(--variable-name);
+
+
+
+When we used our variable as a css property values; we can attach a fallback value that the browser will rever to if the given variable is invalid. 
+
+Note : This fallback is not used to increase browser compability, and it will not work on IE browsers, Rather, it is used so that the browser has a color to display if it cannot find our variable
+
+example: 
+
+property : var(--variable-name, value fallback);
+
