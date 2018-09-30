@@ -1,0 +1,76 @@
+// Center an Element Horizontally Using the margin Property. 
+Another technique is to center a block element horizontally. 
+One way to do this is to set its 'margin' to a value of auto.
+
+
+Images are inline elements by default. 
+Color theory and its impact on design is a deep topic and only the basics are covered.
+Using different combinatiosn of colors can really change the look of a website, and a lot of thought can go into 
+picking a color palette that works with our content.
+
+
+The color wheel is a useful tool to visualize how colors relate to each other. 
+When two colors  are opposite each other on the wheel, they are called complementary colors. 
+They have the characteristic that if they are combines, they "cancel" each other out and create a gray colot.
+However, when placed side-by-side, these colors appear more vribrant and  produce a strong visual contrast.
+
+
+This is different that outdates RYB color model that many of us were taught in school, wich has different and complementary schools. 
+Modern color theory uses the additive RGB model.
+and the substractive CMY (K) model.
+
+For all color challenges. Using color can be a powerful way to add visual interest to a page. 
+Color alone should not be used as the only way to convey important information because user with viaul imapirments may not understant that content.
+
+
+
+
+RGB additive color model in modern color theory. Red (R), green (G), and blue (B) are called primary colors. Mixing two primary colors creates the secondary colors cyan (G + B), magenta (R + B) and yellow (R + G). 
+These secondary colors happen to be the complement to the primary color not used in their creation, and are opposite to that primary color on the color wheel. 
+
+Tertiary colors are the result of combining a primary color with one of its secondary color neighbors.
+
+There are various methods of selecting different colors that result in a harmonious combination in design. 
+
+
+
+//The complementary colors challenge showed that opposite colors on the color wheel can make each other appear more vibrant when placed side-by-side, 
+
+/used to bring visual attention to certain content on the page, wheel of colors can make each other appear more vibrant when placed side-by-side.
+
+
+/Colors have several characteristics including hue, saturatiom, and lightness. 
+Css3 introduced the hs1() property as an alternative way to pick a color by directly stating these characteristics. 
+
+Hue : is what peopley generally think of as "color".
+
+Saturation : Is the amount of gray in a color. A fully satured color has no gray in it, and a minimally satured color is almost completely gray. 
+
+Lightness: Is the amount of white or black in a color. 
+A percentage is given ranging from 0% (black) to 100%(white), where 50% is the normal color. 
+
+
+
+
+
+The hsl()option in css also makes it easy to adjust the tone of a color.
+Mixing white with a pure hue creates a tint of that color, adding black will make a shade. 
+Alternatively, a tone is produced by adding gray or by both tinting and shadinf. 
+Recall that the 's' and 'l' of hsl() stand for saturation and lightness,respectively. 
+The saturation percent changes the amoun of gray and the lightness percent determines how much white or black is in the color. 
+This is useful when we have a base hue that like us, but need different variations of it. 
+
+
+
+//Applying a color on html elements is not limited to one falt hue. Css provides the ability to use color transtions, otherwise known as gradients, on elements. 
+This is accessed through the brackgrounf property's 
+'linear-grafient()'function. 
+Example of the syntax : 
+background: linear-gradient(gradient_direction, color 1, color 2, color 3, ...);
+
+The first argument specififes the direction from wich color transition starts - it can be stated as a degree, where 90deg makes a vertical gradient and 45 deg is angled like a backslash. 
+
+Expliyng the order of colors used in the gradient 
+
+Example.
+background : linear-gradient (90 deg, red, yellow, rgb(204,204.255));
