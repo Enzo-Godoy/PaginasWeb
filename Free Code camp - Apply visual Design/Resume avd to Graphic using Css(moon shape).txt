@@ -1,0 +1,72 @@
+The repeatin-linear-gradient() function is very similar to linear-gradient() with the major difference that it repeats the specified gradient pattern. 
+
+The angle value is the direction of the gradient color stops are like width values that mark where transition takes places, and are given with a percentage or a number of pixels. 
+
+//It helps to think about the color stops as pairs where every two colors blend together. 
+
+If every two color stop values are the same color, the blending isn't noticeavle beacuse it's between the same color, followed by a hard transition to the next color, so you end up with stripes.
+
+
+To add texture and interest to a background and have it stand out more is to add a subtle pattern. 
+
+Attention with the background to stant out too much, and take away from the foregrounf. 
+//The background  property supports the url()function in order to link to an image of the chosen texture or pattern.
+    The link address is wrapped in quotes inside the parentheses.
+
+
+
+
+    Use the css transform scale property to change the size of an Element. 
+
+    To Change the scale of an element, CSS has the transform property, along with its scale()function. 
+
+    Example : 
+
+    element { 
+      transforma:scale(n);
+    }
+
+
+
+
+    All the transforma property has a variety of function that lest us scale, move, rotate, skew, etc. our elements.
+
+
+    Use the css transform property skewX to Skew an Element Along the X-Axis. 
+    Wich skews the selected element alogn its X (horizontal) axis by a given degree. 
+
+
+    Example 
+
+    element {
+      transform : skewX($deg/-&deg);
+    }
+
+
+    Also we got the skewY() - function 
+      wich skews an element along the Y (vertical) axis.
+
+    element { 
+      transform: skewY($deg/-&deg);
+    }
+
+
+
+    Create a Graphic Using Css 
+    By manipulating different selectors and properties, we can make interesting shapes. 
+    One of the easier ones ro try is a crescent moon shape. 
+     Here w'll be useing  box-shadown and the border-radous property. 
+
+
+     We w'll create a round, transparent object with a crisp shadow that is slightly offset to the side- the shadow is actually going to be the moon shape. 
+
+     In order to create a round object, the border.radius properrt should be set to a value od 50%. 
+
+     Remember tjat the box-shadown property takes values for 
+       *off-set -x ,
+       *off-set -y ,
+       *blur-radius ,
+       *spread-radius.  
+
+    //The blur-radius and spread-radius values are optional. 
+    
