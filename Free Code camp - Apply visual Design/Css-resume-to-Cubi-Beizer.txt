@@ -1,0 +1,88 @@
+Create complex shape using Css and Html.
+
+::before and ::after pseudo-elements. 
+These pseudo-elements are used to add something before or after a selected element. 
+
+For the ::before and ::after pseudo-elements to function properly, they must have a defined content property. 
+This property is usually used to add things like a photo or text to the selected element. 
+When the ::before and ::after pseudo-elements are used to make shapes, the content propert is still requires, but it's set to an empty string. 
+
+
+
+Learn how the CSS @keyframes and animation properties work . 
+To animate an element, we neeed to know about the animation properties and the Qkeyframes rule. 
+The animation properties control hoe the animation should behave and the @keyframes rules controlsnwhat haooens during that animation properties in total. 
+
+animation-name sets the name of the animation, wich is later used by@key-frames to tell css wich rules go with
+wich animations. 
+
+
+animation-duration sets the length of time for the animation. 
+
+
+@keyframes is how to specify exactly what happens within the animation over the duration. 
+ 
+ //this is done by giving css properties for specific "frames"  during the animation, with percentages ranging from 0%
+ to %100. 
+    //For this ccs aplies a transition to the element over the given duratio to act . 
+
+
+    We can use CSS @keyframes to change the color of a button in its hover state. 
+
+    The ms stands for milliseconds, are equal 1000ms to 1s. 
+
+
+
+
+   Create Movement usng CSS animation 
+We can use right, left,top , and bottom in animations rules to create movement.
+//Only when elements have specified position, such as fixed or relative. 
+
+
+
+
+In CSS animations, the 'animation-timing.function' property controls how quickly and animated element changes over the duration of the animation. 
+This function shows us how something accelerates and decelerates over the course of the drive. 
+
+There are many predefined keywords available for popular options. 
+
+For example : 
+*ease
+*ease-out
+*ease-in
+*linear
+
+
+
+These keywords chanfe the speed of the animation over its duration. 
+
+CSS offer an option other than keywords  that provides even finer control over how the animation 
+plays out, through the use of Bezier curves. 
+
+In Css, Bezier curves are used with the cubic-bezier function. The sape of the curve represents how the animation plays out. 
+The curve livers on a 1 by 1 coordinate system .
+
+The X-axis of this coordinate system is the duration of the animation (think of it as a time scale). 
+The Y-axis is the change in the animation.
+
+
+The cubic.bezier function consistes of four main points that sit on this 1 by 1 grid. 
+ (p0, p1, p2, p3)  and p3.p0 andp3 are set for us. 
+ they are the beginning and end points wich are always located respectively at the origin(0,0) and (1,1).
+ We set the x and y values for the other two points, ande where us place them in the grid dictates the shape of the curve for the animation to follow. 
+ This is done for the other two points, and where we place them in the grid dictates the shape of the curve for the animation to follow. This is done in CSS by declaring the x and y values of the  p1 and p2 "anchor" points in the form (x1, y2, x2, y2)
+ Pulling it all together 
+ example : 
+
+ element {
+ animation-timing-function : cubic-bezier (0.25, 0.25, 0.75, 0.75)
+ }
+ 
+
+ Linear change of an element during the length of an animation, and is the same as using the linear keyworrd.
+
+ //Changes at a constant speed.
+
+ To cubic-bezier.
+
+
