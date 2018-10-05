@@ -1,0 +1,13 @@
+The animation-timing-function automatically loops at every keyframe when the animation-iteration-count is set to infinite. 
+Since there is a keyframe rule set in the middle of the animation duration (at 50%), it results in two identical animation progressions at the upward and downward movement. 
+
+
+ //When the value of y2 is larger than 1 the curve simulates a juggling movement. 
+ Altough the cubic Bezier curve is mapped on an 1 by 1 coordinate system, and it can only accpt x values from 0 ti 1, they value can be set to numbers larger than one. 
+   ---> This result in an bouncing movement that is ideal for simulating the juggling ball.
+
+
+
+   End--- Css Avd. 
+
+
