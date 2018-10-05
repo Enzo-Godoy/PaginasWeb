@@ -1,0 +1,17 @@
+We need to keep in mind when we are developing our proyect, to make  an open web. 
+
+Three general concepts:
+
+* Have well-organized code that uses appropiate markup. 
+2 - Ensure text alternatives exist for non.text and visual content. 
+3 - Create an easily-navigated page that's keyboard-friendly. 
+
+The check it out we use  W3 Consortium's Web Content Accesibility Guidelines (WCAG). 
+ They set the international standard for accesibility and provide a number of criteria.
+
+
+
+
+ In situatuions when an image is already explained with text content, or does not add meaning to a page, the img still neeeds an alt attribute, but it can be set to an empty string. 
+
+ 
