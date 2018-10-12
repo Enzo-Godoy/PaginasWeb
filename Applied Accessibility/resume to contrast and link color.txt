@@ -1,0 +1,110 @@
+
+Figure element 
+
+HTML5 introduced the figure element, with his related figcaption. 
+Used together, these items wrap a visual representacion along with its caption.
+ This semantically group related content, and provide a text alternative that explains the figure. 
+
+ // For data visualizations like charts, the caption can be used briefly note the trends or conclusiones for users with visual inmpairments. 
+
+
+ ¿How to move a table version of the chart's data off-screen(using CSS) for screen reader users. 
+
+ !-- The figcaption goeas inside the <figure>. And can be combined with other elements. 
+
+
+ Example : 
+  <figure> 
+    <figcaption> 
+     Description for the caption . 
+     </figcaption> 
+  </figure> 
+
+
+Label - element.
+Improve accesibility with semantic HTML markup applies to use both appropiate tag names as well as attributes. 
+
+The label tag wraps the text for a specific form control item, usuallt the name or label for a choice. 
+This ties meaning to the item and makes the form more readable. 
+
+ !-- The 'for' attribute on a label tag explicitely associates that label with the form control and is used by screen readers. 
+
+ The values of the for attribute must be the same as the value of the id attribute of the form control. 
+
+
+ Wrap Radio buttons in a fieldst element. 
+
+ Each choice is given a label with a for attribute tying to the id of the corresponding item as covered in the last challenge.
+  Since radio buttons often come in a group where the user must choose one, there's a way to semantically show the choices are part of a set. 
+
+  The field set tag surrounds the entire grouping of radio buttons to achieve this. It often uses a legend tag to provide a description for the groupin, wich is read by screen readers for each choice in the fieldset element. 
+
+  !-- The fieldset wrapper and legend tag are not necessary when the choices are self-explanatory, like a gender selection. 
+
+
+
+  Accesible Date picker. 
+  Forms often include the input field, wich can be used to create several different form controls.  
+  The type attribute on this element indicates what kind of input will be created. 
+
+  //HTML5 introduced an option to specify a date field. Depending on browser support, a date picker shows up in the input field when it's in focus, wich makes filling in a form easier for all users. 
+
+  For older browsers, the type will default to text, so it helps to show users the expected date format in the label or as placeholder, text just in case.
+
+
+  It's a awesome tool that have by default a calendar in it. Really cool stuff.
+
+
+  HTML5 datetime attribute. 
+  Also introduced the time element along with a datetime attrobute to standardize times. 
+  This is an inline element that can wrap a date or time on a page. 
+  A valid format of that date is held by the datetime attribute. 
+  Thisis the values accesed by a assistive devices. 
+
+
+  Importance of a logical document outline,, and using semanticallt meaningful tags around our content before introduce the visual design aspect. 
+
+
+  However, CSS's magic can also improve accessibility on our page whe we want to visually hide content meant only for screen readers. This happens when information is in a visual format(like a chart), but screen reader users need an alternative presentation(like a table) to access the date.
+  CSS is used to position the screen reader-only elements off the visual are of the browser window. 
+
+  overflow:hidden; 
+
+  The fllowing CSS approaches will not do the same: 
+   {
+   display:none; 
+   visibility:hidden;
+   }
+
+
+
+   Improve readability with high contrast text. 
+   Low contrast between the foreground and background colors can make text difficult to read. 
+   Sufficient contrast improves the readability of our content. 
+
+   The WCAG (Web Content Accesibility  Guidelines) rommend at least a 4.5 to 1 contrast ratio for normal text. 
+   The ratios is calculated by comparing the relative luminance values of two color. 
+   //This ranges from 1:1 for the same color, or no contrast, to 21:1 for white against balck, the strongest contrast. 
+
+
+   Two accessibility issues. 
+    First, color alone should not be used as the only way to convey important information because screen reader users won't see it. 
+    Second, foreground and background colors need sufficient contrast so color blind users can distinguish them. 
+
+    Contrast checking toolds. 
+    The WCAG recommended contast ratio of 4.5:1 applies for color use as well as gray-scale combinations. 
+
+    Colorblind users have trouble distinguishing some colors from others - usually in hue but sometimes lightness as well. 
+
+    There are varoius forms of colorblindness. 
+    The most common form is a reduced sensitivity to detect greens. 
+
+
+    Close colors can be thought of as neighbors on the color wheel,  and those combinations should be avoided when conveying important information .
+
+    Some online color picking tools include visuals simulations of how colors appear for different types of colorblindness.
+
+
+    Screen reader users have different options for what type of content their device reads. This includes skipping to (or over) landmark elements, jumping to the main content, or getting a page summary from the headings. 
+    Another way is to only hear the links available on a apge. 
+    We should use brief but descriptive text within the a tags to provide more meaning. 

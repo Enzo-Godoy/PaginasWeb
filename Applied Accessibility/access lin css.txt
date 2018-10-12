@@ -1,0 +1,3 @@
+HTML5 offers the accesskey attribute to specify a shortcut key to activate or bring focus to an element. Making navigation more efficient for keyboard-only users. 
+
+Allos this attribute to be used on any element, used in interactive ones. This includes links, buttons, and form controls.
