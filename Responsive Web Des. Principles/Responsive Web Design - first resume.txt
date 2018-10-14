@@ -1,0 +1,9 @@
+Responsive Web Desifn Challenges.
+Today the range from large desktop computers to small mobile phones are big. 
+So, thhese devices have different screen sizes, resolutions, and proccesing power. 
+Responsive web design is an approach to designing web content that respnds to the constaints of different devices.
+The page sctructure and css rules should be flexible to accommodate these difference. 
+In gral, we need to design our page's css to our target audience. 
+If we expect most of our traffic to be from mobile users, take a ' mobile-first' approach. Then we add some conditional rules for larger screen sizes. 
+Css gives us the tools to write differente style rules, then apply them depending on the devide displaying the page. 
+
