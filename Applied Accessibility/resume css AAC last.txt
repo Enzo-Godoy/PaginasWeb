@@ -1,0 +1,37 @@
+accesskey -- atributte to specify a shortcut ket to activate or bring focus to an element.
+ Making navigation more efficient for kekyboard-only users. 
+
+
+
+ Using tabindex to Add keyboard focus to an element. 
+ The HTML tabindex attribute has three distinct functions relating to an element's keyboard focus. 
+
+
+ When it's on a tag, it indicates that element  can be focused on. 
+
+ The values(an integer that's positive, negative, or zero) determines the behavior. 
+
+
+ Elements such as links and form controls, automatically receive keyboard focus when a user tabs through a page. 
+
+
+ It's in the same order as the elements come in the HTML source markup. 
+
+ example : 
+
+ <div tabindex="0"> I need keyboard focus!</div>
+
+ A negative tabindex value (typically -a) indicates that an element is focusable, but is not reachable by the keyboard. 
+
+ -- To bring focus to content programmatically. 
+
+
+ Using tabindex also enables the CSS pseudo.class :focus to workon the p tag.
+
+
+ The tabindex attribute also specifies the exact tab order of elements. This is achieved when the value of the attribute is set to a positive number of 1 or higher. 
+
+ Following cycles through the sequence of specified tabindex values. 
+, before moving to default and tabindex="0" items. 
+
+When tab order is set this way, it overrides the default order(wich uses he HTML source). In this whay we can't start navigavtion from the top of the page. 
