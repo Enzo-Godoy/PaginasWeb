@@ -3,7 +3,7 @@ Since there is a keyframe rule set in the middle of the animation duration (at 5
 
 
  //When the value of y2 is larger than 1 the curve simulates a juggling movement. 
- Altough the cubic Bezier curve is mapped on an 1 by 1 coordinate system, and it can only accpt x values from 0 ti 1, they value can be set to numbers larger than one. 
+ Altough the cubic Bezier curve is mapped on an 1 by 1 coordinate system, and it can only accept x values from 0 ti 1, they value can be set to numbers larger than one. 
    ---> This result in an bouncing movement that is ideal for simulating the juggling ball.
 
 
