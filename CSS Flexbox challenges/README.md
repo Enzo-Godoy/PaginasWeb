@@ -1,1 +1,1 @@
-Exercises using Flexbox properties to make some responsive design.
+Exercises using Flexbox property to make some responsive design.
