@@ -1,0 +1,103 @@
+CSS Grid Challenges. 
+CSS grid help us to buil complex web designs. 
+It works by turning an HTML element into a grid container with rows and columns for us to place children elements where we want within the grid. 
+
+
+We need to set the display propertie to grid. 
+This gives us the ability to use all the other properties associated with CSS Grid.
+
+
+In CSS Grid, the parent element is referred to as the container and its children are called iems. 
+
+
+We neeed to define the structure of the grid as well. 
+ To add some solumns to the grid, we use the grid-template-columns property on a grid container. 
+
+ example 
+
+ .container { 
+   display:grid;
+   grid-template-columns: 50px 50px; 
+   /* This will give us two columns that are 50 pix wide each*/.
+    }
+
+
+
+    The number of parameters ------->numbers of columns. 
+    The values of each parameter indicates the width of each column. 
+
+
+  Also we can add rows with
+  grid-template-rows. 
+
+
+  We use 
+  grid-template-rows
+  grid-template-columns
+
+  //in the same way. Every parameter is a object row or columns and the values are from its width or height.
+
+
+
+  Units to change size of columns and rows
+
+  Absolute and relative units like px and em are used. 
+  Also 
+
+  fr : sets the column or row to fraction of the available space.
+
+  auto: sets the column or row to the width or height of its content automtically. 
+
+  %: adjust the column or row to the percent width of its container. 
+
+  example: 
+
+  grid-template-columns: auto 50px 10% 2fr 1fr; 
+
+
+  To make some space between rows and columns we can use the gap property
+  in this way: 
+
+  grid-column-gap: value;
+  grid-row-gap:value;
+
+
+grid-gap is a shorthand property for 
+grid-row-gap and grid-column-gap. 
+If grid-grap has one value, it will create a gap between all rows and columns.
+However, if there are two values, it will use the first one to set the gap between the rows and the second value for the columns. 
+
+
+Grid-column to control spacing. 
+
+all the properties that have been discussed are for grid container.
+The grid-column property is the first one for use on the grid item themselves. 
+
+
+Hypothetical horizontal and vertical lines that create the grid are referred to as lines. 
+These lines are numbered starting with 1 at the top left corner of the grid and move right for columns and down for rows, counting upward. 
+
+
+To control the amount of columns an item will consume, we can use the grid-column property in conjuntion with the line number that we want the item to start and tob at. 
+
+
+In CSS grid, the content of each item is located in a boc wich is referred to as a cell. 
+We can align the content's position within its cell horizontally using the justify-self property on a grid item. 
+
+//Default this property has a value of stretch. 
+Wich will make the content fill the whole width of the cell. 
+Anothers values are : 
+
+Start : Aligns the content at the left of the cell.
+
+Center: Aligns the content in the center of the cell. 
+
+End: Aligns the content at the right of the cell. 
+
+
+
+We can align an item horizontally, there's a way to align an item vertically as well. 
+To do this, we use the align-self propery on an item. 
+
+
+We can align all itemms on our grid container by using justify-items.(horizontally).
