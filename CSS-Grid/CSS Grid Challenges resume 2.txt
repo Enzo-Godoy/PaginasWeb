@@ -1,0 +1,91 @@
+CSS grid two 
+
+We can groups cells of our grid together into an area and give the area a custom name. 
+We do this by using 
+grid-template-areas on the container like this. 
+
+
+
+//So we group by a name some cells, making a area called like the group.
+grid-template-areas: 
+ "header header header"
+ "advert content content"
+ "footer footer footer"
+
+ Every word in the code represents a cell and every pair of quotation marks represent a row.
+
+ In addition to custom albels, we can use a period(.) to designate an empty cell in the grid. 
+
+
+ After creating an areas template for our grid container, as shown in the previous challenge, we can place an item in our custom are by referecing the name we gave it. 
+ To do this, we use the grid-area property on an item like this. 
+
+ -item {grid-area : header;} 
+
+ This lets the grid know that i want the item 1 class to go in the area named header. 
+
+ Again we put an item in a custom area, using it's name. 
+
+ .name {grid-are : custom area;}
+
+ So, we put the item name in the area named header.
+
+ If our grid does'n have an areas template to reference, we can create an area on the fly for an item to be places like 
+
+ itemName {grid-area : 1/1/2/4;} 
+ This is using the line numbers to define thea rea for this item will be. 
+
+ The numbers in the example above represent these values: 
+
+ grid-area : horizontal line to start at / 
+ vertical line to start at / horizontal line to end at/ vertical line to end at; 
+
+ So the item in the example will consume the rows between lines 1 and 2, and the columns between lines 1 and 4. 
+
+
+
+ Reduce repetition using the repeat function. 
+ using the repeat function to specify the number of time that we want our column or row to be repeated, followed by a comma and the value we eant to repeat. 
+
+ Example: 
+
+ grid-template-rows: repeat (100, 50px); 
+
+ We can also repeat multiple values with the repeat function, and insert the function amongst other values when defininf a grid structure. 
+
+
+
+ example: 
+
+ grid-template-columns : repeat(2, 1fr, 50px)20px; 
+
+ This translates to  
+
+ grid-template-columns: 1fr 50px 1fr 50px 20px; 
+
+ note : 1 fr 50 px os repeated twice followed by 20 px in the grid normal use, but using the repeat function we can overrida that.
+
+
+ Limit item size using the minmax function. 
+
+ With minmac. limit the size of items when the grid container changes size. To do this we need to specify the acceptable size range for our item .
+
+
+ grid-template-columns : 100px minmax (50px, 200px);
+
+ Here, the grid.... is set to create two columns; the first is 100px wide, and the second has the minimum width of 50px and the maximum width of 200px.
+
+ The repeat function comes with an option called auto-fill. 
+ This allows us to automatically insert as many rows or columns of our desired size as possible depending on the size of the container. 
+ We can create flexible layouts when combinin auto-fill with minman .
+
+
+ Note : If our container can't fit all our items on oner row, it will move them down to a new one. 
+
+
+
+ auto-fit works almost identically to auto-fill. 
+ The only difference is that when the container's size exceeds the size of all the items combines, auto-fill keeps inserting empty rows or columns and pushed our items to the side, while auto-fit collapses thoses empty rows or columns and stretches our items to fit the size of the container. 
+
+ Note: If our container can't fit all our items on one row, it will move them down to a new one. 
+ 
