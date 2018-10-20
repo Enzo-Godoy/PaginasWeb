@@ -1,3 +1,3 @@
 # PaginasWeb
-Paginas web creadas a modo de práctica, comprimidas en archivo .zip para más facilidad.
+Paginas wb creadas a modo de práctica, comprimidas en archivo .zip para más facilidad.
 Organizadas en subcarpetas.
