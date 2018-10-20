@@ -1,1 +1,1 @@
-Ejercicios de grid, posicionamiento d elementos html.
+Ejercicios de grid, posicionamiento de elementos html.
